@@ -25,6 +25,7 @@ void blur(unsigned char * rgb_in, unsigned char * rgb_out, int rows, int cols) {
     }
 }
 
+
 int main()
 {
     //Declarations
