@@ -67,7 +67,7 @@ int main()
 
     //Recup donnees kernel
     cudaMemcpy(g.data(), rgb_out, taille_rgb, cudaMemcpyDeviceToHost );
-    cv::imwrite( "out_blur.jpg", m_out );
+    cv::imwrite( "out_flou.jpg", m_out );
     cudaFree(rgb_in);
     cudaFree(rgb_out);
     return 0;

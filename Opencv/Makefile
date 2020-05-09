@@ -1,7 +1,7 @@
 CXX=nvcc
 LDLIBS=`pkg-config --libs opencv`
 
-blur: blur.cu
+flou: flou.cu
 	$(CXX) $(CXXFLAGS) -o $@ $< $(LDLIBS)
 
 detectionSommets: detectionSommets.cu
