@@ -1,8 +1,8 @@
 CXX=nvcc
 LDLIBS=`pkg-config --libs opencv`
 
-main_seq: main.cu
+blur: blur.cu
 	$(CXX) $(CXXFLAGS) -o $@ $< $(LDLIBS)
 
 clean:
-	rm main
+	rm blur
